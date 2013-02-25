@@ -71,7 +71,7 @@ class PropertiesPlugin implements Plugin<Project> {
 		project.ext.filterTokens = [:]
 
 		// process files in reverse order.  Last one in wins.
-		processFile("gradle.properties", project, false)
+		processFile("gradle-default.properties", project, false)
 		processFile("gradle-${project.ext.environmentName}.properties", project, project.ext.environmentName != "local")
 		processFile("${userHome}/gradle.properties", project, false)
 		// The user properties file is optional

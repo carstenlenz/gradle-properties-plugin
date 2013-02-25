@@ -25,7 +25,7 @@ class PropertiesPluginTest extends GroovyTestCase {
 		builder.copy(file:'src/test/resources/gradle-test.properties',
 						     tofile : "${project.projectDir}/gradle-test.properties")
 		builder.copy(file:'src/test/resources/gradle-project.properties',
-						tofile : "${project.projectDir}/gradle.properties")
+						tofile : "${project.projectDir}/gradle-default.properties")
 	}
 
 	/**
